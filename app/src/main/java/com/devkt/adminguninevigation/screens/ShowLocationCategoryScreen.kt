@@ -78,7 +78,7 @@ fun ShowLocationCategoryScreen(
         Row(
             modifier = Modifier
                 .fillMaxWidth()
-                .padding(start = 20.dp, top = 70.dp, end = 10.dp),
+                .padding(start = 20.dp, top = 20.dp, end = 10.dp),
             verticalAlignment = Alignment.CenterVertically,
             horizontalArrangement = Arrangement.Center
         ) {
