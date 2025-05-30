@@ -2,35 +2,38 @@ package com.devkt.adminguninevigation.screens.nav
 
 import kotlinx.serialization.Serializable
 
-class Routs {
+@Serializable
+sealed class Routs {
     @Serializable
-    object LoginScreen
+    data object LoginScreen : Routs()
 
     @Serializable
-    object HomeScreen
+    data object HomeScreen : Routs()
 
     @Serializable
-    object AddLocationScreen
+    data object AddLocationScreen : Routs()
 
     @Serializable
-    object AddSubLocationScreen
+    data object AddSubLocationScreen : Routs()
 
     @Serializable
-    object LocationPickerScreen
+    data object LocationPickerScreen : Routs()
 
     @Serializable
-    data class UpdateLocationCategoryScreen(val place: String)
+    data class UpdateLocationCategoryScreen(val place: String) : Routs()
 
     @Serializable
-    object ShowLocationCategoryScreen
+    data object ShowLocationCategoryScreen : Routs()
 
     @Serializable
-    data class ShowAllLocationScreen(val category: String)
+    data class ShowAllLocationScreen(val category: String) : Routs()
 
     @Serializable
-    data class UpdateAllLocationScreen(val subLocationName: String)
+    data class UpdateAllLocationScreen(val subLocationName: String) : Routs()
 
     @Serializable
-    object ShowAllLocationWithCategoryScreen
+    data object ShowAllLocationWithCategoryScreen : Routs()
 
+    @Serializable
+    data object SuggestionScreen : Routs()
 }

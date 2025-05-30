@@ -67,6 +67,7 @@ dependencies {
     implementation("com.mapbox.maps:android:11.11.0")
     implementation("com.mapbox.extension:maps-compose:11.11.0")
     implementation("com.google.accompanist:accompanist-permissions:0.37.0")
+    implementation ("androidx.compose.material:material-icons-extended:1.7.8")
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
